@@ -1,6 +1,9 @@
+var angular = require('angular');
+var material = require('angular-material');
+
 var controller = require('./repo-list.controller');
 
-module.exports = angular.module('repo-list', ['ngMaterial'])
+module.exports = angular.module('repo-list', [material])
 	.directive('repoList', function () {
 		return {
 			template: '<md-list>' +
