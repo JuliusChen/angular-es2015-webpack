@@ -1,9 +1,10 @@
 export default class RepoListController {
 
-	constructor($http) {
-		$http.get('https://api.github.com/users/jgiovaresco/repos').then(({data}) => {
-			this.repos = data;
-		});
+	constructor(repoService) {
+		repoService.githubRepositoriesOf('jgiovaresco')
+			.then((repos) => {
+				this.repos = repos;
+			});
 	}
 
 	selectRepo(repo) {
