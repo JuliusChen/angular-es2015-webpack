@@ -12,6 +12,7 @@ In addition I'll show how to migrate an ES5 code to ES6 and how to use every too
 * Clone the project
 * Navigate between tags to see every steps
 
-## Step 0
+## Steps
 
-[Step 0](Step_0.md)
+1. [Basic application](Step_0.md)
+2. [Webpack basic configuration](Step_1.md)
