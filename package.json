@@ -4,7 +4,7 @@
   "description": "Demo project for Angular, ES2015 and Webpack",
   "main": "index.js",
   "scripts": {
-    "build": "webpack src/repo.app.js src/bundle.js",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Julien Giovaresco",

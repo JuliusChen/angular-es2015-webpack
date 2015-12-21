@@ -24,6 +24,8 @@ bundle.js  2.12 MB       0  [emitted]  main
 
 As you can see, Webpack just need the file where the main Angular module is declared. Then it will follow the ``require`` to find the other files.
 
+With the file [webpack.config.js](webpack.config.js) you can see a simple Configuration file that does the same thing than the command ``webpack src/repo.app.js src/bundle.js`` 
+
 ## Quickstart
 
 * Run ``npm install``
