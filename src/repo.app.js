@@ -1,5 +1,6 @@
-var angular = require('angular');
-var repoList   = require('./repo-list/repo-list.module');
-var repoDetail = require('./repo-details/repo-details.module');
+import angular from 'angular';
 
-angular.module('repoApp', [repoList, repoDetail]);
+import repoListModule from './repo-list/repo-list.module.js';
+import repoDetailsModule from './repo-details/repo-details.module.js';
+
+export default angular.module('repoApp', [repoListModule, repoDetailsModule]);

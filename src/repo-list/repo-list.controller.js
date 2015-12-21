@@ -1,17 +1,12 @@
-module.exports = function RepoListController($http) {
-	var vm        = this;
-	vm.selectRepo = selectRepo;
+export default class RepoListController {
 
-	init();
-
-	function init() {
-		$http.get('https://api.github.com/users/jgiovaresco/repos')
-			.then(function (response) {
-				vm.repos = response.data;
-			});
+	constructor($http) {
+		$http.get('https://api.github.com/users/jgiovaresco/repos').then(({data}) => {
+			this.repos = data;
+		});
 	}
 
-	function selectRepo(repo) {
-		vm.selectedRepo = repo;
+	selectRepo(repo) {
+		this.selectedRepo = repo;
 	}
-};
+}

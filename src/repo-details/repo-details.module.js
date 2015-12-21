@@ -1,14 +1,7 @@
-var angular = require('angular');
-var material = require('angular-material');
+import angular from 'angular';
+import material from 'angular-material';
+import RepoDetails from './repo-details.directive.js';
 
-module.exports = angular.module('repo-details', [material])
-	.directive('repoDetails', function () {
-		return {
-			template: '<h2 class="Repo-header">{{ repo.name }}</h2>' +
-			'<p>{{ repo | json }}</p>',
-			scope: {
-				repo: '='
-			}
-		}
-	})
+export default angular.module('repo-details', [material])
+	.directive(RepoDetails.selector(), () => new RepoDetails())
 	.name;
