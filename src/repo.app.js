@@ -1,1 +1,4 @@
-angular.module('repoApp', ['repo-list', 'repo-details']);
+var repoList   = require('./repo-list/repo-list.module');
+var repoDetail = require('./repo-details/repo-details.module');
+
+angular.module('repoApp', [repoList, repoDetail]);

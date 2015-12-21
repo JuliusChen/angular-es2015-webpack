@@ -1,5 +1,6 @@
-angular.module('repo-list', ['ngMaterial'])
-	.controller('RepoListController', RepoListController)
+var controller = require('./repo-list.controller');
+
+module.exports = angular.module('repo-list', ['ngMaterial'])
 	.directive('repoList', function () {
 		return {
 			template: '<md-list>' +
@@ -11,10 +12,11 @@ angular.module('repo-list', ['ngMaterial'])
 			'<md-divider ng-if="!$last"></md-divider>' +
 			'</md-list-item>' +
 			'</md-list>',
-			controller: 'RepoListController',
+			controller: controller,
 			controllerAs: 'list',
 			bindToController: {
 				selectedRepo: '='
 			}
 		}
-	});
+	})
+	.name;

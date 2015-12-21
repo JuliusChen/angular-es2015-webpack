@@ -1,4 +1,4 @@
-angular.module('repo-details', ['ngMaterial'])
+module.exports = angular.module('repo-details', ['ngMaterial'])
 	.directive('repoDetails', function () {
 		return {
 			template: '<h2 class="Repo-header">{{ repo.name }}</h2>' +
@@ -7,4 +7,5 @@ angular.module('repo-details', ['ngMaterial'])
 				repo: '='
 			}
 		}
-	});
+	})
+	.name;

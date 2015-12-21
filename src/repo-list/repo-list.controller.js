@@ -1,4 +1,4 @@
-function RepoListController($http) {
+module.exports = function RepoListController($http) {
 	var vm        = this;
 	vm.selectRepo = selectRepo;
 
@@ -14,4 +14,4 @@ function RepoListController($http) {
 	function selectRepo(repo) {
 		vm.selectedRepo = repo;
 	}
-}
+};

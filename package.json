@@ -8,8 +8,6 @@
   },
   "author": "Julien Giovaresco",
   "license": "MIT",
-  "devDependencies": {
-  },
   "dependencies": {
     "angular": "^1.4.8",
     "angular-animate": "^1.4.8",
