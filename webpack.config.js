@@ -1,4 +1,4 @@
-var path = require('path');
+var path    = require('path');
 
 module.exports = {
 	// The base directory (absolute path) for resolving 'entry' option
@@ -16,5 +16,23 @@ module.exports = {
 		// The filename of the entry chunk as relative path inside 'output.path' directory
 		// [name] is replaced by the name of the chunk
 		filename: './[name].js'
+	},
+	// Arguments used by babel-loader
+	babel: {
+		cacheDirectory: true,
+		presets: ['es2015']
+	},
+	module: {
+		loaders: [
+			// Loader to transpile JS file with Babel
+			{
+				// Regex to find js file
+				test: /\.js/,
+				// Define the loader to be used for the found files
+				loader: 'babel',
+				// Exclude files from node_modules to optimize the build
+				exlude: /node_modules/
+			}
+		]
 	}
 };
