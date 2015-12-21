@@ -1,0 +1,19 @@
+{
+  "name": "angular-es2015-webpack",
+  "version": "1.0.0",
+  "description": "Demo project for Angular, ES2015 and Webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julien Giovaresco",
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-animate": "^1.4.8",
+    "angular-aria": "^1.4.8",
+    "angular-material": "^1.0.1"
+  }
+}

@@ -1,0 +1,22 @@
+# http://editorconfig.org
+root = true
+
+[*]
+indent_style = tab
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.js]
+spaces_around_operators=true
+quote_type = single
+curly_bracket_next_line = false
+indent_brace_style = BSD KNF
+
+[*.html]
+quote_type = double
