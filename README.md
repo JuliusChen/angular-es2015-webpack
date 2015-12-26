@@ -17,3 +17,4 @@ In addition I'll show how to migrate an ES5 code to ES6 and how to use every too
 1. [Basic application](Step_0.md)
 2. [Webpack basic configuration](Step_1.md)
 3. [ES 6](Step_2.md)
+4. [Unit tests](Step_3.md)
