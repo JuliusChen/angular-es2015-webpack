@@ -30,6 +30,9 @@ module.exports = function (config) {
 			},
 			// Loaders configuration same as webpack.config.js
 			module: {
+				preLoaders: [
+					{test: /\.js$/,	loader: 'eslint', exclude: /node_modules/}
+				],
 				loaders: [
 					{test: /\.js$/, loader: 'babel', exclude: /node_modules/}
 				]

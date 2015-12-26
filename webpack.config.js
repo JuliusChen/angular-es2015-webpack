@@ -23,6 +23,13 @@ module.exports = {
 		presets: ['es2015']
 	},
 	module: {
+		preLoaders: [
+			{
+				test: /\.js$/,
+				loader: 'eslint',
+				exclude: /node_modules/
+			}
+		],
 		loaders: [
 			// Loader to transpile JS file with Babel
 			{
