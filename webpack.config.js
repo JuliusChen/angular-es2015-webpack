@@ -24,9 +24,13 @@ module.exports = {
 	},
 	module: {
 		preLoaders: [
+			// Loader to lint our code
 			{
+				// Regex to find js file
 				test: /\.js$/,
+				// Define the loader to be used for the found files
 				loader: 'eslint',
+				// Exclude files from node_modules to optimize the build
 				exclude: /node_modules/
 			}
 		],
