@@ -5,11 +5,11 @@ module.exports = function (config) {
 		basePath: '',
 
 		// frameworks to use
-		frameworks: ['chai', 'mocha'],
+		frameworks: ['chai', 'mocha', 'sinon', 'sinon-chai'],
 
 		// list of files / patterns to load in the browser
 		files: [
-			'./src/**/*_test.js'
+			'unit_tests.js'
 		],
 
 		// list of files to exclude
@@ -17,10 +17,11 @@ module.exports = function (config) {
 
 		// preprocess matching files before serving them to the browser
 		preprocessors: {
-			'./src/**/*_test.js': ['webpack']
+			'unit_tests.js': ['webpack', 'sourcemap']
 		},
 
 		webpack: {
+			devtool: 'inline-source-map',
 			babel: {
 				cacheDirectory: true,
 				presets: ['es2015']
