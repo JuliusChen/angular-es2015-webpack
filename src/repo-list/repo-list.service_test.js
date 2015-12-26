@@ -1,5 +1,4 @@
 import angular from 'angular';
-import 'angular-mocks';
 
 import RepoListService from './repo-list.service.js';
 

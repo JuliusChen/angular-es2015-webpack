@@ -1,3 +1,5 @@
+import angular from 'angular';
+
 import Controller from './repo-list.controller.js';
 
 describe('Repo list controller', () => {
@@ -26,6 +28,6 @@ describe('Repo list controller', () => {
 		$rootScope.$apply();
 
 		expect(controller.repos).to.deep.equal(['repo1', 'repo2']);
-		expect(repoServiceStub.githubRepositoriesOf).to.be.calledWith('jgiovaresco')
+		expect(repoServiceStub.githubRepositoriesOf).to.be.calledWith('jgiovaresco');
 	});
 });
