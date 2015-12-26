@@ -28,19 +28,39 @@ module.exports = function (config) {
 				cacheDirectory: true,
 				presets: ['es2015']
 			},
+			// ISparta configuration
+			isparta: {
+				embedSource: true,
+				noAutoWrap: true,
+				// these babel options will be passed only to isparta and not to babel-loader
+				babel: {
+					presets: ['es2015']
+				}
+			},
 			// Loaders configuration same as webpack.config.js
 			module: {
 				preLoaders: [
 					{test: /\.js$/,	loader: 'eslint', exclude: /node_modules/}
 				],
 				loaders: [
-					{test: /\.js$/, loader: 'babel', exclude: /node_modules/}
+					// Transpile only test files with Babel directly
+					{test: /_test\.js$/,	loader: 'babel', exclude: /node_modules/},
+					// Loads js files with isparta (files will be automatically transpiled)
+					{test: /\.js$/, loader: 'isparta', exclude: /node_modules|_test\.js$/}
 				]
 			}
 		},
 
 		// test results reporter to use
-		reporters: ['mocha'],
+		reporters: ['mocha', 'coverage'],
+
+		coverageReporter: {
+			reporters: [
+				{type: 'lcov', dir: 'build/coverage/', subdir: '.'},
+				{type: 'json', dir: 'build/coverage/', subdir: '.'},
+				{type: 'text-summary'}
+			]
+		},
 
 		// web server port
 		port: 9876,
