@@ -1,7 +1,12 @@
 language: node_js
 
+addons:
+  code_climate:
+    repo_token: b42ce96607db158184a564e55a61140f888316f2e2b8c3398ac05e25a322b152
+
 node_js:
   - "5.2"
 
 after_script:
   - cat $TRAVIS_BUILD_DIR/build/coverage/lcov.info | coveralls --verbose
+  - codeclimate-test-reporter < $TRAVIS_BUILD_DIR/build/coverage/lcov.info
