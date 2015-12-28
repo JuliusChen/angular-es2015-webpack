@@ -1,3 +1,7 @@
 language: node_js
+
 node_js:
   - "5.2"
+
+after_script:
+  - cat $TRAVIS_BUILD_DIR/build/coverage/lcov.info | coveralls --verbose
