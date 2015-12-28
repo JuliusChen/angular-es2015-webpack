@@ -1,4 +1,84 @@
 engines:
   eslint:
     enabled: true
-
+    checks:
+      angular/angularelement:
+        enabled: false
+      angular/controller-as:
+        enabled: false
+      angular/controller-as-route:
+        enabled: false
+      angular/controller-as-vm:
+        enabled: false
+      angular/controller-name:
+        enabled: false
+      angular/definedundefined:
+        enabled: false
+      angular/di:
+        enabled: false
+      angular/di-unused:
+        enabled: false
+      angular/directive-name:
+        enabled: false
+      angular/directive-restrict:
+        enabled: false
+      angular/document-service:
+        enabled: false
+      angular/empty-controller:
+        enabled: false
+      angular/interval-service:
+        enabled: false
+      angular/json-functions:
+        enabled: false
+      angular/log:
+        enabled: false
+      angular/module-getter:
+        enabled: false
+      angular/module-setter:
+        enabled: false
+      angular/no-angular-mock:
+        enabled: false
+      angular/no-cookiestore:
+        enabled: false
+      angular/no-http-callback:
+        enabled: false
+      angular/no-inline-template:
+        enabled: false
+      angular/no-jquery-angularelement:
+        enabled: false
+      angular/no-private-call:
+        enabled: false
+      angular/no-run-logic:
+        enabled: false
+      angular/no-services:
+        enabled: false
+      angular/on-watch:
+        enabled: false
+      angular/rest-service:
+        enabled: false
+      angular/timeout-service:
+        enabled: false
+      angular/typecheck-array:
+        enabled: false
+      angular/typecheck-date:
+        enabled: false
+      angular/typecheck-function:
+        enabled: false
+      angular/typecheck-number:
+        enabled: false
+      angular/typecheck-object:
+        enabled: false
+      angular/typecheck-regexp:
+        enabled: false
+      angular/typecheck-string:
+        enabled: false
+      angular/watchers-execution:
+        enabled: false
+      angular/window-service:
+        enabled: false
+      mocha/no-exclusive-tests:
+        enabled: false
+      mocha/handle-done-callback:
+        enabled: false
+      mocha/no-global-tests:
+        enabled: false
