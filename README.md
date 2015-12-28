@@ -1,5 +1,9 @@
 # Angular ES2015 with Webpack
 
+[![Build Status](https://travis-ci.org/jgiovaresco/angular-es2015-webpack.svg?branch=travis)](https://travis-ci.org/jgiovaresco/angular-es2015-webpack)
+[![Coverage Status](https://coveralls.io/repos/jgiovaresco/angular-es2015-webpack/badge.svg?branch=travis&service=github)](https://coveralls.io/github/jgiovaresco/angular-es2015-webpack?branch=travis)
+[![Code Climate](https://codeclimate.com/github/jgiovaresco/angular-es2015-webpack/badges/gpa.svg)](https://codeclimate.com/github/jgiovaresco/angular-es2015-webpack)
+
 ## Goal of this project
 
 It's a simple application based on https://github.com/velcrin/webpack-angular-es2015. 
